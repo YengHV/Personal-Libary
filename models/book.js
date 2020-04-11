@@ -1,19 +1,15 @@
-// Import the ORM to create functions that will interact with the database.
 const orm = require("../config/orm.js");
 
-// declare a class called Books
 class Book {
- 
-  getAllbooks(){
-    return orm.innerJoin("books")
-  }
-
-  getOneBook(){
-    return orm.innerJoin("books")
-  }
-
-  addBook(){
-    return orm.create("books")
-  }
+    getAllBooks() {
+        return orm.getAllBooksORM()
+    }
+    getOneBook(bookTitle) {
+        return orm.getOneBookORM(bookTitle);
+    }
+    addBook(title, coverPhoto, authorId) {
+        return orm.addBookORM(title, coverPhoto, authorId)
+    }
 }
+
 module.exports = new Book();
