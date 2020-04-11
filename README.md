@@ -1,47 +1,36 @@
 # Personal Library
+Create an ORM with the following methods and properities Properties
+- Connection
+- Methods
+  a) innerJoin
+  b) create
+  c) delete
 
-## Instructions
+Book Model
+- Methods
+  a) getAllBooks
+  b) getOneBook
+  c) addBook
 
-### Phase 1 - ORM
-- Create an ORM with the following methods and properities
-  Properties
-    - connection
+Note Model
+- Methods
+  a) getBookNotes
+  b) addBookNote
+  c) deleteBookNote
 
-  Methods
-    - innerJoin
-      - returns an INNER JOIN query
-    - create
-      - returns an INSERT INTO query
-    - delete
-      - returns a DELETE FROM query
+Controllers
+- Book Controller
+  a) GET route for returning all books
+  b) GET route for returning one book
+  c) POST route for adding a book
 
-### Phase 2 - Models
-- Book Model
+- Note Controller
+  a) GET route for returning all notes for one book
+  b) POST route for adding a book note
+  b) DELETE route for deleting a note
 
-  Methods:
-  - getAllBooks
-    - returns ORM.innerJoin
-  - getOneBook
-    - returns ORM.innerJoin
-  - addBook
-    - returns ORM.create
-- Note Model
 
-  Methods:
-  - getBookNotes
-    - returns ORM.innerJoin
-  - addBookNote
-    - returns ORM.create
-  - deleteBookNote
-    - returns ORM.delete
-
-### Phase 3 - Controllers
-  - Book Controller
-    -  GET route for returning all books
-    - GET route for returning one book
-    - POST route for adding a book
-    
-  - Note Controller
-    - GET route for returning all notes for one book
-    - POST route for adding a book note
-    - DELETE route for deleting a note
+## contributors
+Yeng Vang - https://github.com/YengHV 
+Tom Van Deusen - https://github.com/shininglite 
+Maxwell Hankner - https://github.com/maxwellhankner
